@@ -1,0 +1,16 @@
+<div class="panel panel-default post-card" ng-repeat="post in postCtrl.posts">
+  <div class="panel-heading">
+    <h3>{{ post.name }}</h3>
+    <h5><span>{{ post.date | date: 'dd MMMM yyyy hh:mm' }}</span></h5>
+  </div>
+  <div class="panel-body">
+    <div class="container-fluid">
+      {{post.body.content}}
+    </div>
+    <div class="container-fluid">
+      <div class="img" ng-repeat="image in post.body.images">
+        <img width="200px" class="img-thumbnail" ng-src="{{ image }}" alt="">
+      </div>
+    </div>
+  </div>
+</div>

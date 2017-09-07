@@ -1,0 +1,58 @@
+.navbar{
+  @include box-shadow(1px, 3px, 14px, -2px, rgba(0,0,0,0.65));
+  .container-fluid{
+    max-width: 80vw;
+    display: -webkit-flex;
+    display: flex;
+    .navbar-header{
+      display: -webkit-flex;
+      display: flex !important;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+
+    }
+    .nav-name{
+      display: -webkit-flex;
+      display: flex !important;
+      margin-left: auto!important;
+      -webkit-align-items: stretch;
+      align-items: stretch;
+      vertical-align: middle;
+      li{
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        a{
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-direction: row;
+          flex-direction: row;
+        }
+      }
+    }
+  }
+}
+
+.nav-colored{
+  border: none !important;
+  border-radius: 0 !important;
+  background-color: $primary-color !important;
+  *{
+    color: $light-primary-color !important;
+  }
+  .container-fluid{
+    ul{
+      .active{
+        a{
+          background-color: $dark-primary-color !important;
+        }
+      }
+      .open{
+        a{
+          color: $primary-text-color !important;
+        }
+      }
+    }
+  }
+}
