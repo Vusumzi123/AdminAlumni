@@ -1,11 +1,11 @@
 <div class="panel panel-default post-card" ng-repeat="post in postCtrl.posts">
   <div class="panel-heading">
-    <h3>{{ post.name }}</h3>
-    <h5><span>{{ post.date | date: 'dd MMMM yyyy hh:mm' }}</span></h5>
+    <h3><a href="#!/entry{{ postCtrl.getUrl(post) }}"">{{ post.name }}</a></h3>
+    <h4><span class="styled-text">{{ post.date | date: 'dd MMMM yyyy hh:mm' }}</span></h4>
   </div>
   <div class="panel-body">
     <div class="container-fluid">
-      {{post.body.content}}
+      {{post.body.content}}{{ post.name }}
     </div>
     <div class="container-fluid">
       <div class="img" ng-repeat="image in post.body.images">

@@ -1,0 +1,24 @@
+.post-header{
+  .panel-body{
+    div{
+      .tags{
+        ul{
+          @extend .clear-list;
+          li{
+            display: inline;
+            padding: 3px;
+            margin: 0 4px;
+            background-color: $dark-primary-color;
+            color: $light-primary-color;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.post-body{
+  padding: 60px;
+  min-height: 700px;
+}

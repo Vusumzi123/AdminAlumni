@@ -1,0 +1,42 @@
+<div class="container-fluid view-container">
+  <div class="row">
+    <div class="col-md-10">
+      <div class="panel panel-default post-header">
+        <div class="panel-body">
+          <div class="centered-content column">
+            <h1>{{ selectedPost.name }}</h1>
+            <h4 class="styled-text"> {{ selectedPost.date | date: 'dd MMMM yyyy'}} </h4>
+            <div class="tags">
+              <ul>
+                <a href="#" ng-repeat="tag in selectedPost.tags" ><li>{{ tag }}</li></a>
+                <!-- fix links -->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="panel panel-default post-header">
+        <div class="panel-body post-body">
+          <div class="container-fluid">
+            {{selectedPost.body.content}}
+          </div>
+          <div class="container-fluid">
+            <div class="img" ng-repeat="image in selectedPost.body.images">
+              <img class="img-thumbnail" ng-src="{{ image }}" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="col-md-2">
+      <rescent-posts></rescent-posts>
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,10 @@
+<div class="panel panel-default user-info">
+  <div class="panel-heading">
+    <h4>Últimas Entradas</h4>
+  </div>
+  <div class="panel-body">
+    <ul class="clear-list rescent-list">
+      <li ng-repeat="rescent in postCtrl.rescent"><a href="#!/entry{{ postCtrl.getUrl(rescent) }}">{{ rescent.name }}</a></li>
+    </ul>
+  </div>
+</div>

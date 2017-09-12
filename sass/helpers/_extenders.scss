@@ -1,0 +1,13 @@
+.flex-just-center{
+  display: -webkit-flex !important;
+  display: flex !important;
+  justify-content: center !important;
+  -webkit-justify-content : center !important;
+}
+
+.flex-direction-column{
+  display: -webkit-flex !important;
+  display: flex !important;
+  flex-direction: column !important;
+  -webkit-flex-direction: column !important;
+}

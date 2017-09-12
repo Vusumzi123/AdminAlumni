@@ -6,6 +6,18 @@ html, body {
   padding: 0;
   font-family: 'Raleway', sans-serif; }
 
+.flex-just-center, .centered-content {
+  display: -webkit-flex !important;
+  display: flex !important;
+  justify-content: center !important;
+  -webkit-justify-content: center !important; }
+
+.flex-direction-column, .column {
+  display: -webkit-flex !important;
+  display: flex !important;
+  flex-direction: column !important;
+  -webkit-flex-direction: column !important; }
+
 .numeric {
   color: #009688;
   font-weight: bold; }
@@ -57,11 +69,11 @@ html, body {
   -moz-box-shadow: 1px 2px 14px -2px rgba(0, 0, 0, 0.45);
   box-shadow: 1px 2px 14px -2px rgba(0, 0, 0, 0.45); }
 
-.clear-list {
+.clear-list, .post-header .panel-body div .tags ul {
   list-style-type: none !important;
   margin: 0;
   padding: 0; }
-  .clear-list li {
+  .clear-list li, .post-header .panel-body div .tags ul li {
     margin: 0;
     padding: 0; }
 
@@ -72,6 +84,10 @@ html, body {
   flex-direction: row;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap; }
+
+.styled-text {
+  font-style: italic;
+  color: #00796b; }
 
 .view-container {
   max-width: 80vw;
@@ -91,6 +107,16 @@ html, body {
     text-align: center;
     display: block;
     margin: auto; }
+
+.rescent-list li {
+  padding: 2px 6px; }
+  .rescent-list li a {
+    color: #00796b; }
+    .rescent-list li a:hover {
+      text-decoration: underline; }
+
+.centered-content {
+  text-align: center; }
 
 .nav-logo {
   height: 30px;
@@ -112,5 +138,16 @@ html, body {
 .lvl {
   font-size: 8em;
   font-weight: bold; }
+
+.post-header .panel-body div .tags ul li {
+  display: inline;
+  padding: 3px;
+  margin: 0 4px;
+  background-color: #00796b;
+  color: #b2dfdb; }
+
+.post-body {
+  padding: 60px;
+  min-height: 700px; }
 
 /*# sourceMappingURL=main.css.map */

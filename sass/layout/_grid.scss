@@ -22,3 +22,24 @@
     flex-direction: column;
   }
 }
+
+.rescent-list{
+  li{
+    padding: 2px 6px;
+    a{
+      color: $dark-primary-color;
+    &:hover{
+      text-decoration: underline;
+    }
+    }
+  }
+}
+
+.centered-content{
+  @extend .flex-just-center;
+  text-align: center;
+}
+
+.column{
+  @extend .flex-direction-column;
+}
